@@ -1,0 +1,412 @@
+<section class="formdata container-fluid">
+  <form #data="ngForm" (submit)="send(data.value)">
+  <div class="row mx-auto mt-3">
+  <div class="col col-12">
+      <h2 class="title">NEW ENQUIRY</h2>
+  </div>
+  <div class="col col-lg-2 col-md-2 col-sm-10 col-10">
+  <input type="search" name="enquiryNo" ngModel placeholder="ENQUIRY NO."/>
+  </div>
+  <div class="col col-lg-2 col-md-2 col-sm-10 col-10">
+      <input type="date" name="enquiryDate" ngModel placeholder="ENQUIRY DATE"/>
+  </div>
+  <div class="col col-lg-2 col-md-2 col-sm-10 col-10">
+      <select ngModel>
+          <option hidden>DSP NAME</option>
+          <option value="a">A</option>
+          <option value="b">B</option>
+          <option  value="c">C</option>
+      </select>
+  </div>
+  <div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+      <input type="text" name="enquiryStatus" ngModel placeholder="ENQUIRY STATUS"/>
+  </div>
+  <div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+      <input type="date" name="expectedDate" ngModel placeholder="EXPECTED DATE OF PRODUCT"/>
+  </div>
+  <div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+      <input type="text" name="sourceOfEnquiry" ngModel placeholder="SOURCE OF ENQUIRY"/>
+   </div>
+</div>
+
+<div class="row mx-auto mt-3 mb-3">
+               
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>ENQUIRY STAGE</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+    </select>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="date" name="validationDate" ngModel placeholder="VALIDATION DATE"/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="text" name="prospectType" ngModel placeholder="PROSPECT TYPE"/>
+
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="date" name="NextDate" ngModel placeholder="NEXT FOLLOW UP DATE"/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="date" name="NextActive" ngModel placeholder="NEXT FOLLOW UP ACTIVE DATE"/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="text" name="remark" ngModel placeholder="REMARKS"/>
+ </div>
+</div>
+
+<div class="row mx-auto mt-3 mb-3">
+<div class="col col-12">
+    <h2 class="title">FIELD ACTIVITY DETAILS</h2>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+<input type="text" name="fieldActivityType" ngModel placeholder="FIELD ACTIVITY TYPE"/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="date" name="fieldActivityDate" ngModel placeholder="FIELD ACTIVITY DATE"/>
+</div>
+
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="text" name="fieldActivityNumber" ngModel placeholder="FIELD ACTIVITY PLAN NO."/>
+</div>
+
+</div>
+
+
+<div class="row mx-auto mt-3 mb-3">
+<div class="col col-12">
+    <h2 class="title">DIGITAL CAMPAIGNS</h2>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+<input type="text" name="digitalPlatforms" placeholder="DIGITAL PLATFORM"/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="date" name="dateOfEnquiry" placeholder="DATE OF ENQUIRY"/>
+</div>
+
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="text" name="validatedStatus" placeholder="VALIDATED STATUS"/>
+</div>
+
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="text" name="validatedBy" placeholder="VALIDATED BY"/>
+</div>
+</div>
+
+<div class="row mx-auto mt-3">
+<div class="col col-12">
+    <h2 class="title">PROSPECT DEATILS</h2>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+<input type="tel" name="mobileNo" placeholder="MOBILE NO."/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="text" name="prospectCode" placeholder="PROSPECT CODE"/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="text" name="prospectType" placeholder="PROSPECT TYPE"/>
+
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="text" name="companyName" placeholder="COMPANY NAME"/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>Type</option>
+        <option>Mr.</option>
+        <option>Mrs.</option>
+    </select>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="text" name="firstName" placeholder="FIRST NAME"/>
+ </div>
+</div>
+
+<div class="row mx-auto mt-3">
+
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="text" name="middleName" placeholder="MIDDLE NAME"/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="text" name="lastName" placeholder="LAST NAME"/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="tel" name="watssapNo" placeholder="WATSAPP NO."/>
+
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="tel" name="alternateMobileNo" placeholder="ALTERNATE MOBILE NO."/>
+
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="tel" name="StdTelephoneeNo" placeholder="STD TELEPHONE NO."/>
+
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="email" name="emailid" placeholder="EMAIL ID"/>
+ </div>
+</div>
+
+<div class="row mx-auto mt-3">
+
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <textarea name="address1" placeholder="ADDRESS 1" cols="30" rows="10"></textarea>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <textarea name="address1" placeholder="ADDRESS 2" cols="30" rows="10"></textarea>
+
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10">
+    <textarea name="address1" placeholder="ADDRESS 3" cols="30" rows="10"></textarea>
+
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>DISTRICT</option>
+        <option>PUNE</option>
+        <option>WADGAOSHERI</option>
+    </select>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>TALUKA</option>
+        <option>PUNE</option>
+        <option>WADGAOSHERI</option>
+    </select>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>PIN CODE</option>
+        <option>411003</option>
+        <option>411005</option>
+    </select>
+ </div>
+</div>
+
+<div class="row mx-auto mt-3">
+
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>VILLAGE</option>
+        <option>PUNE</option>
+        <option>WADGAOSHERI</option>
+    </select>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>STATE</option>
+        <option>MAHARASHTRA</option>
+        <option>GOA</option>
+    </select>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>COUNTRY</option>
+        <option>INDIA</option>
+        <option>RUSSIA</option>
+    </select>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="date" name="dateOFBirth" placeholder="DATE OF BIRTH"/>
+
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="date" name="dateOFAniversary" placeholder="DATE OF ANIVERSARY"/>
+
+</div>
+
+</div>
+
+<div class="row mx-auto mt-3">
+
+    <div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+        <input type="text" name="panid" placeholder="PAN NO."/>
+     </div>
+
+     <div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+        <input type="text" name="gstid" placeholder="GST NO."/>
+     </div>
+
+     <div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+        <input type="text" name="addharid" placeholder="ADDHAR NO."/>
+     </div>
+
+     <div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+        <input type="text" name="addharid" placeholder="ADDHAR NO."/>
+     </div>
+</div>
+
+<div class="row mx-auto mt-3">
+<div class="col col-12">
+    <h2 class="title">PRODUCT INTERESTED</h2>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+<input type="search" name="modelNo" placeholder="MODEL NO."/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="search" name="itemNo." placeholder="ITEM NO."/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+   <textarea name="itemDescription" placeholder="ITEM DESCRIPTION" cols="30" rows="10"></textarea>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="text" name="series" placeholder="SERIES"/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="text" name="segment" placeholder="SEGMENT"/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>VARIANT</option>
+        <option>A</option>
+        <option>B</option>
+    </select>
+ </div>
+</div>
+
+<div class="row mx-auto mt-3">
+<div class="col col-sm-2">
+    <select>
+        <option hidden>EXCHANGE REQUIRED</option>
+        <option>YES</option>
+        <option>NO</option>
+    </select>
+</div>
+</div>
+
+<div class="row mx-auto mt-3">
+<div class="col col-12">
+    <h2 class="title">EXCHANGE MODEL DETAILS (If exchange is selected YES)</h2>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>EXCHANGE BRAND</option>
+        <option>A</option>
+        <option>B</option>
+    </select>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="search" name="itemNo." placeholder="ITEM NO."/>
+</div>
+
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="text" name="exchangeModelName" placeholder="EXCHANGE MODEL NAME"/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="text" name="exchangeModelYear" placeholder="exchangeModelYear"/>
+</div>
+
+</div>
+
+<div class="row mx-auto mt-3">
+<div class="col col-12">
+    <h2 class="title">PROSPECT BACKGROUND</h2>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>OCCUPATION</option>
+        <option>A</option>
+        <option>B</option>
+    </select>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="number" name="LandSize" placeholder="LAND SIZE (in Acre)"/>
+</div>
+
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>SOIL TYPE</option>
+        <option>A</option>
+        <option>B</option>
+    </select>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>MAJOR CROP GROWN</option>
+        <option>A</option>
+        <option>B</option>
+    </select>
+</div>
+
+</div>
+
+<div class="row mx-auto mt-3">
+<div class="col col-12">
+    <h2 class="title">RETAIL FINANCE AND SUBSIDY DEATILS</h2>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="number" name="dealPrice" placeholder="DEAL PRICE"/>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>CASH/LOAN</option>
+        <option>cash</option>
+        <option>loan</option>
+    </select>
+</div>
+
+
+</div>
+
+<div class="row mx-auto mt-3">
+
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>FINANCIER</option>
+        <option>A</option>
+        <option>B</option>
+    </select>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="date" name="financeLoggedInDate" placeholder="FINANCE LOGGED IN DATE"/>
+</div>
+
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="number" name="LoanAmount" placeholder="LOAN AMOUNT APPLIED">
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="number" name="tenures" placeholder="TENURES (in month)">
+
+</div>
+
+</div>
+
+<div class="row mx-auto mt-3">
+
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="number" name="AnnualRateOfInterest" placeholder="ANNUAL RATE OF INTEREST">
+
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="number" name="emi" placeholder="EMI"/>
+</div>
+
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <select>
+        <option hidden>RETAIL FINANCIAL STATUS</option>
+        <option>A</option>
+        <option>B</option>
+    </select>
+</div>
+<div class="col col-lg-2 col-md-2 col-sm-10 col-10 ">
+    <input type="number" name="amountRecevied" placeholder="TOTAL AMOUNT RECEVIED">
+
+</div>
+
+</div>
+<div class="row mx-auto mt-3 mb-5">
+<div class="col col-sm-4">
+    <input type="file" name="upload" placeholder="UPLOAD FILE"/>
+
+</div>
+</div>
+
+<div class="butt mx-auto mb-5">
+    <button type="button" class="btn btn-primary">SUBMIT</button>
+    <button type="button" class="btn btn-outline-warning">CLEAR</button>
+    <button type="button" class="btn btn-outline-dark">EXIT</button>
+</div>
+  </form>
+</section>

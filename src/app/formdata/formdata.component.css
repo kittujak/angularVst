@@ -1,0 +1,25 @@
+.formdata{
+    
+  border: 2px solid black;
+}
+
+.formdata .row .col .title{
+  font-size: 1.2rem;
+  width: 100%;
+  height: auto;
+  background-color: green;
+  color: #fff;
+  padding: 10px;
+  padding-left: 20px;
+  }
+
+  .formdata .row .col select,textarea,input{
+    width: 170px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    font-size: 0.8rem;
+    border: 0.8px solid gray;
+    cursor: pointer;
+}

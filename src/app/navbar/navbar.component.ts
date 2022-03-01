@@ -11,5 +11,22 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
   }
+ 
+  open(){
+   const menu = document.getElementById("item");
+   if(menu.style.display=="none")
+   {
+     menu.style.display="block";
+   }
+   else
+   {
+    menu.style.display="none";
 
+   }
+
+ }
+
+ close(){
+  document.getElementById("item").style.display="none";
+ }
 }
